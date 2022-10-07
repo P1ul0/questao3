@@ -23,6 +23,7 @@ public class Lista {
     public Lista() {
         this.head = null;
         this.tail = null;
+        
     }
 
     public void inserir(int newValue) {
