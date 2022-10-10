@@ -53,14 +53,19 @@ public class Lista {
         }
 
     }
-    public void limpar(Lista l){
+    public void mesclar(Lista l){
+        Node p = this.head;
+        while (p != null){
+            l.inserir(p.getValue());
+            p = p.getNext();
+        }
+
+    }
+    public void limpar(Lista l) {
         l.setHead(null);
         l.setTail(null);
     }
 
-    public void copiar(){
-
-    }
     public void print(){
         Node p = this.head;
         while (p != null){
