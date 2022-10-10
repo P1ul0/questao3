@@ -59,6 +59,7 @@ public class Lista {
         while (p != null){
             l.inserir(p.getValue());
             p = p.getNext();
+            
         }
 
     }
